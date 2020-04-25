@@ -1,4 +1,5 @@
 <script>
+  import Navbar from './Navbar.svelte'
 	let name = "Lincoln";
   let points = 100;
   let showControls = false;
@@ -8,6 +9,7 @@
   const toggleControls= () => showControls = !showControls;
 </script>
 
+<Navbar />
 <main class="container">
   <div class="card">
     <h1>
@@ -38,6 +40,12 @@
     font-weight: 100;
   }
 
+  .btn {
+    box-sizing: border-box;
+    padding: 0 5px;
+    min-width: 22px;
+    outline: none;
+  }
   .btn-sm {
     font-size: 0.5em;
   }
