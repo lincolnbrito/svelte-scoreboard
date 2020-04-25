@@ -9,7 +9,9 @@
   const addPoint = () => points +=1;
   const removePoint = () => points -=1;
   const toggleControls= () => showControls = !showControls;
-  const onDelete = () => dispatch('removeplayer', name);
+  const onDelete = () => {
+    confirm('Are you sure?') && dispatch('removeplayer', name); 
+  }
 </script>
 
 <div class="card">
