@@ -1,3 +1,7 @@
+# Svelte Scoreboard
+
+Based on Video [Svelte Crash Course](https://www.youtube.com/watch?v=uK2RnIzrQ0M) by [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA) 
+
 *Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
 
 ---
