@@ -17,12 +17,14 @@
       points: 70
     }
   ];
-
+  
   const addPlayer = (e) => {
     const { player } = e.detail;
-
     players = [...players, player];
-    console.log(e.detail);
+  }
+
+  const removePlayer = (e) => {
+    players = players.filter( player => player.name !== e.detail)
   }
 </script>
 
@@ -32,10 +34,11 @@
   <AddPlayer on:addplayer={addPlayer} />
   
   {#if players.length === 0}
-    <p>No players</p>
+    <h1>No players</h1>
+    <p>Add some one on the form above</p>
   {:else}
     {#each players as player}
-      <Player name={player.name} points={player.points} />
+      <Player name={player.name} points={player.points} on:removeplayer={removePlayer}/>
     {/each}
   {/if}
   
